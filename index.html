@@ -5,19 +5,18 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Oferta Exclusiva — Real Black Marketing</title>
 
-  <!-- Fonts & performance hints -->
+  <!-- Fonts & performance -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Tailwind (CDN) -->
+  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
-    /* small custom tweaks */
-    body { font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
+    body { font-family: 'Inter', sans-serif; }
     .count-box { min-width: 58px; }
-    .count-box .unit { font-size: 0.75rem; letter-spacing: .06em; color: #9CA3AF; text-transform: uppercase; }
-    .count-box .value { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Helvetica Neue", monospace; font-size: 1.25rem; font-weight: 700; }
+    .count-box .unit { font-size: 0.75rem; color: #9CA3AF; text-transform: uppercase; }
+    .count-box .value { font-family: monospace; font-size: 1.25rem; font-weight: 700; }
     @media (min-width: 768px) {
       .count-box { min-width: 80px; }
       .count-box .value { font-size: 1.6rem; }
@@ -26,7 +25,7 @@
 </head>
 <body class="bg-white text-black">
 
-  <!-- Header (minimal, aligned with brand) -->
+  <!-- Header -->
   <header class="w-full py-4 border-b">
     <div class="max-w-6xl mx-auto px-6 flex items-center justify-center">
       <img src="logo.png" alt="Logo Real Black Marketing" class="h-10 md:h-14" loading="lazy">
@@ -37,69 +36,65 @@
   <main>
     <section class="py-12 md:py-20 bg-black text-white">
       <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
-        <!-- Copy -->
+        <!-- Texto -->
         <div class="text-center md:text-left">
           <h1 class="text-2xl md:text-4xl font-extrabold leading-tight mb-4">
-            🎉 Parabéns — acesso confirmado.
-            <span class="block font-semibold text-lg md:text-xl mt-2">Desbloqueie agora uma oferta única para multiplicar seus resultados.</span>
+            🎉 Parabéns!  
+            Você desbloqueou acesso à <span class="text-gray-200">oferta exclusiva</span> para multiplicar seus resultados.
           </h1>
 
           <p class="text-sm md:text-base text-gray-300 mb-6">
-            Esta oferta aparece <strong>apenas nesta página</strong>. Se você sair, não encontrará este preço novamente.
+            Esta é a sua <strong>única chance</strong>. Se sair, não terá esse preço de novo.
           </p>
 
-          <!-- Countdown (aria-live) -->
+          <!-- Preço -->
+          <div class="mb-6">
+            <p class="text-gray-400 text-sm">Valor real: <span class="line-through opacity-70">R$997</span></p>
+            <p class="text-3xl md:text-4xl font-bold text-white">Agora: <span class="text-green-400">R$397</span></p>
+            <p class="text-sm text-gray-400">(economia de R$600 somente nesta página)</p>
+          </div>
+
+          <!-- Contador -->
           <div class="mb-6">
             <p class="text-xs text-gray-400 uppercase tracking-wide mb-2">Oferta expira em</p>
-
             <div id="countdownWrap" class="flex flex-wrap gap-2 items-center" aria-live="polite" role="status">
-              <div class="count-box bg-white/6 rounded-xl px-3 py-2 text-center">
+              <div class="count-box bg-white/10 rounded-xl px-3 py-2 text-center">
                 <div class="value text-white" id="cb-days">00</div>
                 <div class="unit">Dias</div>
               </div>
-              <div class="count-box bg-white/6 rounded-xl px-3 py-2 text-center">
+              <div class="count-box bg-white/10 rounded-xl px-3 py-2 text-center">
                 <div class="value text-white" id="cb-hours">00</div>
                 <div class="unit">Horas</div>
               </div>
-              <div class="count-box bg-white/6 rounded-xl px-3 py-2 text-center">
+              <div class="count-box bg-white/10 rounded-xl px-3 py-2 text-center">
                 <div class="value text-white" id="cb-mins">00</div>
                 <div class="unit">Min</div>
               </div>
-              <div class="count-box bg-white/6 rounded-xl px-3 py-2 text-center">
+              <div class="count-box bg-white/10 rounded-xl px-3 py-2 text-center">
                 <div class="value text-white" id="cb-secs">00</div>
                 <div class="unit">Seg</div>
               </div>
             </div>
           </div>
 
-          <!-- Primary CTA -->
-          <div class="flex items-center gap-4 justify-center md:justify-start">
-            <a id="primaryCta"
-               href="https://pay.kirvano.com/6772ce7a-85a2-4d2a-b41a-cf2959cc83f7"
-               rel="noopener noreferrer"
-               target="_blank"
-               class="inline-block bg-white text-black px-6 md:px-8 py-3 md:py-4 rounded-2xl font-semibold shadow hover:bg-gray-100 transition">
-              🚀 Desbloquear Acesso Premium
-            </a>
-
-            <!-- small reassurance -->
-            <span class="text-gray-300 text-xs md:text-sm">7 dias de garantia • Acesso imediato</span>
-          </div>
+          <!-- CTA -->
+          <a id="primaryCta"
+             href="https://pay.kirvano.com/6772ce7a-85a2-4d2a-b41a-cf2959cc83f7"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="inline-block bg-white text-black px-6 md:px-8 py-3 md:py-4 rounded-2xl font-semibold shadow hover:bg-gray-100 transition">
+            🚀 Desbloquear Acesso Premium
+          </a>
         </div>
 
-        <!-- Video card -->
+        <!-- Vídeo -->
         <div class="mx-auto w-full max-w-sm md:max-w-md relative">
           <div class="rounded-xl overflow-hidden shadow-lg bg-black">
             <video id="meuVideo" class="w-full h-auto block" autoplay muted loop playsinline poster="ia.png">
               <source src="video2.mp4" type="video/mp4">
-              Seu navegador não suporta vídeo.
             </video>
-
-            <!-- sound button: small on mobile, larger on desktop -->
             <button id="ativarSom"
-                    aria-label="Ativar som do vídeo"
-                    class="absolute inset-0 m-auto w-max bg-black/50 text-white rounded-md flex items-center gap-2 justify-center
-                           text-xs px-3 py-2 md:text-base md:px-4 md:py-2 cursor-pointer">
+                    class="absolute inset-0 m-auto w-max bg-black/50 text-white rounded-md text-xs px-3 py-2 md:text-base md:px-4 md:py-2">
               🔊 Toque para ativar o som
             </button>
           </div>
@@ -107,46 +102,45 @@
       </div>
     </section>
 
-    <!-- BENEFÍCIOS (conciso e direto) -->
+    <!-- Benefícios -->
     <section class="py-10 md:py-16">
       <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-start">
         <div>
-          <h2 class="text-2xl md:text-3xl font-bold mb-4">O que você vai desbloquear agora</h2>
+          <h2 class="text-2xl md:text-3xl font-bold mb-6">O que você desbloqueia por apenas R$397</h2>
           <ul class="space-y-4 text-gray-700">
-            <li class="flex gap-3 items-start">
-              <span class="text-black text-xl">🚀</span>
+            <li class="flex gap-3">
+              <span class="text-xl">🚀</span>
               <div>
                 <div class="font-semibold">Estratégias Avançadas + IA</div>
-                <div class="text-sm">Agentes prontos para aplicar, templates e hacks usados por players de alto resultado.</div>
+                <p class="text-sm">Agentes exclusivos e hacks de players milionários.</p>
               </div>
             </li>
-            <li class="flex gap-3 items-start">
-              <span class="text-black text-xl">✅</span>
+            <li class="flex gap-3">
+              <span class="text-xl">✅</span>
               <div>
                 <div class="font-semibold">7 dias extras de garantia</div>
-                <div class="text-sm">Teste sem risco — reembolso 100% se não estiver satisfeito.</div>
+                <p class="text-sm">Se não fizer sentido, devolvemos 100% do valor.</p>
               </div>
             </li>
-            <li class="flex gap-3 items-start">
-              <span class="text-black text-xl">👨‍🏫</span>
+            <li class="flex gap-3">
+              <span class="text-xl">👨‍🏫</span>
               <div>
-                <div class="font-semibold">Execução guiada</div>
-                <div class="text-sm">4 encontros ao vivo para implementação passo a passo.</div>
+                <div class="font-semibold">Execução Guiada</div>
+                <p class="text-sm">4 encontros ao vivo, passo a passo.</p>
               </div>
             </li>
           </ul>
 
-          <div class="mt-8 md:mt-10">
+          <!-- CTA -->
+          <div class="mt-8">
             <a id="secondaryCta"
                href="https://pay.kirvano.com/6772ce7a-85a2-4d2a-b41a-cf2959cc83f7"
                target="_blank"
-               rel="noopener noreferrer"
                class="inline-block bg-black text-white px-6 py-3 rounded-2xl font-semibold hover:bg-gray-900 transition">
-               🔥 Sim, desbloquear agora
+              🔥 Sim, quero esse acesso premium por R$397
             </a>
           </div>
         </div>
-
         <div class="flex items-center justify-center">
           <img src="ia.png" alt="Fluxo de vendas IA" class="w-full max-w-sm rounded-xl shadow-lg" loading="lazy">
         </div>
@@ -154,13 +148,12 @@
     </section>
   </main>
 
-  <!-- Mobile fixed CTA -->
+  <!-- CTA fixo mobile -->
   <a id="mobileStickyCta"
      href="https://pay.kirvano.com/6772ce7a-85a2-4d2a-b41a-cf2959cc83f7"
      target="_blank"
-     rel="noopener noreferrer"
      class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 md:hidden bg-black text-white px-6 py-3 rounded-full font-semibold shadow-lg">
-    🚀 Desbloquear Acesso Premium
+    🚀 Garantir por R$397
   </a>
 
   <!-- Footer -->
@@ -171,128 +164,52 @@
     </div>
   </footer>
 
-  <!-- SCRIPTS: contador persistente + UX -->
+  <!-- Scripts -->
   <script>
-    // --- Configurações ---
-    const STORAGE_KEY = 'upsell_deadline_v1';
-    const HOURS = 48; // 48h para upsell
-    const CTA_IDS = ['primaryCta','secondaryCta','mobileStickyCta'];
-
-    // cria ou recupera deadline persistente
-    function getOrCreateDeadline() {
-      try {
-        const saved = localStorage.getItem(STORAGE_KEY);
-        if (saved) {
-          const ts = parseInt(saved, 10);
-          if (!isNaN(ts) && ts > Date.now()) return ts;
-        }
-        const newDeadline = Date.now() + HOURS * 60 * 60 * 1000;
-        localStorage.setItem(STORAGE_KEY, String(newDeadline));
-        return newDeadline;
-      } catch (e) {
-        // se storage falhar, fallback em memória (não persistente)
-        return Date.now() + HOURS * 60 * 60 * 1000;
-      }
-    }
-
-    const DEADLINE = getOrCreateDeadline();
-
-    // atualiza contadores em caixinhas
-    function updateCountdownBoxes(deadline) {
-      const now = Date.now();
-      const distance = deadline - now;
-      const els = {
-        days: document.getElementById('cb-days'),
-        hours: document.getElementById('cb-hours'),
-        mins: document.getElementById('cb-mins'),
-        secs: document.getElementById('cb-secs')
-      };
-
-      if (!els.days) return;
-
-      if (distance <= 0) {
-        // expirou
-        els.days.textContent = '00';
-        els.hours.textContent = '00';
-        els.mins.textContent = '00';
-        els.secs.textContent = '00';
-        onCountdownExpired();
-        return;
-      }
-
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      els.days.textContent = String(days).padStart(2, '0');
-      els.hours.textContent = String(hours).padStart(2, '0');
-      els.mins.textContent = String(minutes).padStart(2, '0');
-      els.secs.textContent = String(seconds).padStart(2, '0');
-    }
-
-    // acionar quando expira
-    function onCountdownExpired() {
-      // desabilita CTAs
-      CTA_IDS.forEach(id => {
-        const el = document.getElementById(id);
-        if (!el) return;
-        el.classList.add('opacity-50','pointer-events-none');
-        el.setAttribute('aria-disabled','true');
-        // opcional: mudar texto se for um botão <a>
-        if (el.tagName.toLowerCase() === 'a') {
-          el.href = '#';
-        }
-      });
-
-      // informar acessibilidade
-      const wrap = document.getElementById('countdownWrap');
-      if (wrap) {
-        wrap.setAttribute('aria-live','polite');
-        // adicional: exibe mensagem breve
-        const msg = document.createElement('div');
-        msg.className = 'text-sm text-red-600 mt-2';
-        msg.textContent = 'Oferta encerrada.';
-        wrap.appendChild(msg);
-      }
-    }
-
-    // inicia interval
-    updateCountdownBoxes(DEADLINE);
-    const interval = setInterval(() => {
-      const now = Date.now();
-      if (now >= DEADLINE) {
-        clearInterval(interval);
-        updateCountdownBoxes(DEADLINE); // final update -> triggers expired
-        return;
-      }
-      updateCountdownBoxes(DEADLINE);
-    }, 1000);
-
-
-    // VIDEO: ativar som (botão menor no mobile)
-    (function() {
+    // Som do vídeo
+    document.getElementById('ativarSom').addEventListener('click', function () {
       const video = document.getElementById('meuVideo');
-      const btn = document.getElementById('ativarSom');
+      video.muted = false;
+      video.currentTime = 0;
+      video.play();
+      this.style.display = 'none';
+    });
 
-      if (!video || !btn) return;
+    // Contador regressivo (48h persistente)
+    const STORAGE_KEY = 'upsell_deadline';
+    let deadline = localStorage.getItem(STORAGE_KEY);
+    if (!deadline || deadline < Date.now()) {
+      deadline = Date.now() + 48 * 60 * 60 * 1000;
+      localStorage.setItem(STORAGE_KEY, deadline);
+    } else {
+      deadline = parseInt(deadline, 10);
+    }
 
-      btn.addEventListener('click', function(e) {
-        e.preventDefault();
-        try {
-          video.muted = false;
-          video.currentTime = 0;
-          const p = video.play();
-          if (p && p.then) {
-            p.catch(()=>{}); // ignore play rejection
-          }
-        } catch (err) { /* ignore */ }
-        btn.style.display = 'none';
-      });
+    function updateCountdown() {
+      const now = Date.now();
+      const dist = deadline - now;
 
-      // on small screens, make the control less intrusive (already styled)
-      // ensure it does not block pointer events to underlying CTA etc.
-    })();
+      const d = Math.floor(dist / (1000 * 60 * 60 * 24));
+      const h = Math.floor((dist % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const m = Math.floor((dist % (1000 * 60 * 60)) / (1000 * 60));
+      const s = Math.floor((dist % (1000 * 60)) / 1000);
+
+      document.getElementById('cb-days').textContent = String(d).padStart(2,'0');
+      document.getElementById('cb-hours').textContent = String(h).padStart(2,'0');
+      document.getElementById('cb-mins').textContent = String(m).padStart(2,'0');
+      document.getElementById('cb-secs').textContent = String(s).padStart(2,'0');
+
+      if (dist < 0) {
+        clearInterval(timer);
+        document.getElementById('countdownWrap').innerHTML = '<p class="text-red-500">Oferta encerrada</p>';
+        ['primaryCta','secondaryCta','mobileStickyCta'].forEach(id=>{
+          const el=document.getElementById(id);
+          if(el){el.classList.add('opacity-50','pointer-events-none');el.href="#";}
+        });
+      }
+    }
+    const timer = setInterval(updateCountdown, 1000);
+    updateCountdown();
   </script>
 </body>
 </html>
