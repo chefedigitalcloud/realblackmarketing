@@ -3,99 +3,93 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Real Black Marketing</title>
+  <title>Oferta Exclusiva - Real Black Marketing</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body class="bg-white text-black font-sans">
-  <!-- Header 
-  <header class="w-full py-4 flex justify-center bg-white shadow-sm">
-    <img src="logo.png" alt="Caixa Rápido + IA" class="h-20 md:h-28 lg:h-32">
-  </header>
--->
+
   <!-- Hero -->
-<section class="py-20 bg-black text-white">
-  <div class="max-w-6xl mx-auto grid md:grid-cols-2 items-center gap-8 px-6">
+  <section class="py-20 bg-black text-white">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 items-center gap-8 px-6">
 
-    <!-- Texto -->
-    <div class="text-center md:text-left">
-      <h1 class="text-[22px] md:text-[36px] font-bold mb-6">
-        Parabéns pela sua decisão! Agora você pode multiplicar seus resultados com estratégias secretas que não estão no Caixa Rápido.
-      </h1>
-      <br>
-      <a href="https://pay.kirvano.com/6772ce7a-85a2-4d2a-b41a-cf2959cc83f7" 
-         target="_blank" 
-         class="bg-white text-black px-8 py-4 rounded-2xl font-semibold hover:bg-gray-200 transition">
-         Saiba Mais
-      </a>
+      <!-- Texto -->
+      <div class="text-center md:text-left">
+        <h1 class="text-3xl md:text-5xl font-bold mb-6 leading-tight">
+          🎉 Parabéns!  
+          Você acaba de entrar para um grupo seleto.  
+          Agora pode desbloquear um acesso exclusivo para multiplicar seus resultados.
+        </h1>
+        <p class="text-lg text-gray-300 mb-8">
+          Essa oferta <span class="font-bold">só aparece uma vez</span>.  
+          Se você sair desta página, não poderá acessar novamente por este valor especial.
+        </p>
+
+        <!-- Contador -->
+        <div class="mb-6">
+          <p class="text-sm text-gray-400 uppercase tracking-wide">Oferta expira em:</p>
+          <div id="countdown" class="text-3xl font-mono font-bold mt-2"></div>
+        </div>
+
+        <a href="https://pay.kirvano.com/6772ce7a-85a2-4d2a-b41a-cf2959cc83f7" 
+           target="_blank" 
+           class="bg-white text-black px-8 py-4 rounded-2xl font-bold hover:bg-gray-200 transition inline-block">
+          🚀 Quero desbloquear meu acesso premium agora
+        </a>
+      </div>
+
+      <!-- Vídeo -->
+      <div class="block mt-8 md:mt-0 relative w-full max-w-[250px] sm:max-w-[320px] md:max-w-[480px] mx-auto">
+        <video id="meuVideo" autoplay muted loop playsinline class="w-full rounded-xl shadow-lg">
+          <source src="video2.mp4" type="video/mp4">
+          Seu navegador não suporta vídeos HTML5.
+        </video>
+        <!-- Botão de som -->
+        <button id="ativarSom"
+                onclick="ativarAudio()"
+                class="absolute inset-0 flex items-center justify-center bg-black/50 text-white font-bold text-lg rounded-xl">
+          🔊 Toque para ativar o som
+        </button>
+      </div>
     </div>
+  </section>
 
-    <!-- Vídeo + Botão -->
-    <div class="block mt-8 md:mt-0 relative w-full max-w-[250px] sm:max-w-[320px] md:max-w-[480px] mx-auto">
-      
-      <video id="meuVideo" 
-             autoplay 
-             muted 
-             loop 
-             playsinline 
-             class="w-full rounded-xl shadow-lg">
-        <source src="video2.mp4" type="video/mp4">
-        Seu navegador não suporta vídeos HTML5.
-      </video>
+  <script>
+    function ativarAudio() {
+      const video = document.getElementById('meuVideo');
+      const btn = document.getElementById('ativarSom');
+      video.muted = false;
+      video.currentTime = 0;
+      video.play();
+      btn.style.display = "none";
+    }
+  </script>
 
-      <!-- Botão centralizado -->
-      <button id="ativarSom"
-              onclick="ativarAudio()"
-              class="absolute inset-0 flex items-center justify-center bg-black/50 text-white font-bold text-lg rounded-xl">
-        🔊 Toque para ativar o som
-      </button>
-    </div>
-
-  </div>
-</section>
-
-<script>
-  function ativarAudio() {
-    const video = document.getElementById('meuVideo');
-    const btn = document.getElementById('ativarSom');
-
-    // desbloqueia som
-    video.muted = false;
-    // volta para o início
-    video.currentTime = 0;
-    // dá play de novo com som
-    video.play();
-
-    // botão desaparece
-    btn.style.display = "none";
-  }
-</script>
-
-
-
-
-
-  <!-- Como Funciona -->
+  <!-- Benefícios -->
   <section class="py-16 px-6 max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center">
     <div class="text-center md:text-left">
-      <h2 class="text-3xl font-bold mb-12">Um pouco mais de Bônus!!</h2>
+      <h2 class="text-3xl font-bold mb-12">O que você vai desbloquear agora:</h2>
       <div class="grid gap-8">
         <div class="p-6 border rounded-2xl shadow-sm">
-          <h3 class="font-bold mb-2">Aplique IA + Estratégias</h3>
-          <p>🎯 Receba acesso imediato aos Agentes IA exclusivos + treinamento avançado com os hacks que os top players usam para lucrar todos os dias.</p>
+          <h3 class="font-bold mb-2">🚀 Estratégias Avançadas + IA</h3>
+          <p class="text-gray-600">Acesso imediato a agentes de IA exclusivos + treinamento avançado com os mesmos hacks usados pelos players milionários.</p>
         </div>
         <div class="p-6 border rounded-2xl shadow-sm">
-          <h3 class="font-bold mb-2">+7 dias de garantia</h3>
-          <p>👍Testa por 7 dias, se não fizer sentido, devolvemos 100% do seu investimento.</p>
+          <h3 class="font-bold mb-2">✅ 7 dias extras de garantia</h3>
+          <p class="text-gray-600">Teste sem risco. Se não fizer sentido para você, devolvemos 100% do valor investido.</p>
         </div>
         <div class="p-6 border rounded-2xl shadow-sm">
-          <h3 class="font-bold mb-2">Execução guiada</h3>
-          <p>🚀 4 encontros ao vivo(execução guiada, passo a passo).</p>
+          <h3 class="font-bold mb-2">👨‍🏫 Execução Guiada</h3>
+          <p class="text-gray-600">4 encontros ao vivo com passo a passo para implementar sem travar.</p>
         </div>
-    
+      </div>
 
-        <a href="https://pay.kirvano.com/6772ce7a-85a2-4d2a-b41a-cf2959cc83f7" target="_blank" class="bg-black text-white px-8 py-4 rounded-2xl font-semibold hover:bg-black-200 transition">Quero desbloquear meu acesso premium agora.</a>
-        
+      <!-- CTA final -->
+      <div class="mt-10">
+        <a href="https://pay.kirvano.com/6772ce7a-85a2-4d2a-b41a-cf2959cc83f7" 
+           target="_blank" 
+           class="bg-black text-white px-8 py-4 rounded-2xl font-bold hover:bg-gray-800 transition">
+          🔥 Sim, quero desbloquear meu acesso premium agora
+        </a>
       </div>
     </div>
     <div>
@@ -103,56 +97,41 @@
     </div>
   </section>
 
-  <!-- CTA Final 
-  <section class="py-20 bg-black text-white">
-    <div class="max-w-6xl mx-auto grid md:grid-cols-2 items-center gap-8 px-6">
-      <div class="text-center md:text-left">
-        <h2 class="text-4xl font-bold mb-6">A hora de vender de verdade é agora</h2>
-        <p class="text-lg mb-8">Entre para o real black marketing, caixa rápido com IA e construa sistemas que geram vendas todos os dias.</p>
-        <a href="https://t.me/+hBor03l6HcllMTVh" target="_blank" class="bg-white text-black px-8 py-4 rounded-2xl font-semibold hover:bg-gray-200 transition">Quero Acessar Agora</a>
-      </div>
-      <div class="block mt-8 md:mt-0">
-  <img src="https://www.agenciaeplus.com.br/wp-content/uploads/2025/05/IA-para-ecommerce.jpg" 
-       alt="Futuro com IA" 
-       class="w-full max-w-xs sm:max-w-sm md:max-w-lg mx-auto rounded-xl shadow-lg">
-</div>
-
-    </div>
-  </section>
--->
   <!-- Footer -->
   <footer class="py-6 text-center bg-white border-t">
     <img src="logo.png" alt="Logo" class="h-12 md:h-16 lg:h-20 mx-auto mb-2">
     <p class="text-sm text-gray-500">© 2025 Caixa Rápido + IA. Todos os direitos reservados.</p>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Contador regressivo -->
   <script>
-    var swiper = new Swiper(".mySwiper", {
-      loop: true,
-      autoplay: {
-        delay: 10000,
-        disableOnInteraction: false,
-      },
-      slidesPerView: 1,
-      spaceBetween: 20,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 2,
-        },
-        1024: {
-          slidesPerView: 3,
+    const now = new Date().getTime();
+    const countdownDate = now + (48 * 60 * 60 * 1000); // 48h de prazo
+
+    function startCountdown(id, deadline) {
+      const x = setInterval(function() {
+        const now = new Date().getTime();
+        const distance = deadline - now;
+
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById(id).innerHTML = "Oferta Encerrada";
+          return;
         }
-      }
-    });
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById(id).innerHTML =
+          (days > 0 ? days + "d " : "") +
+          ("0" + hours).slice(-2) + ":" +
+          ("0" + minutes).slice(-2) + ":" +
+          ("0" + seconds).slice(-2);
+      }, 1000);
+    }
+    startCountdown("countdown", countdownDate);
   </script>
 </body>
 </html>
